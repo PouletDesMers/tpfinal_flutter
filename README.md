@@ -74,7 +74,11 @@ flutter run
 
 Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
 
-[![Vidéo de démonstration](https://img.youtube.com/vi/1tGAOCMhhLw/maxresdefault.jpg)](https://youtube.com/shorts/1tGAOCMhhLw)
+<video src="docs/Screen_Recording_20260710_103004.mp4" width="360" controls>
+  Votre navigateur ne supporte pas la lecture vidéo.
+</video>
+
+Également disponible sur YouTube : https://youtube.com/shorts/1tGAOCMhhLw
 
 ---
 
