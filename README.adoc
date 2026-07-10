@@ -61,7 +61,7 @@ flutter run
 
 [NOTE]
 ====
-L'URL de l'API est configurée dans `flutter/lib/services/api_service.dart`.
+L'URL de l'API est configurée dans link:flutter/lib/services/api_service.dart[`flutter/lib/services/api_service.dart`].
 
 * Pour un **appareil réel** : utiliser l'IP locale du serveur (`http://192.168.x.x:8081`)
 * Pour l'**émulateur Android** : utiliser `http://10.0.2.2:8081`
@@ -75,4 +75,4 @@ video::docs/Screen_Recording_20260710_103004.mp4[Vidéo de démonstration, width
 
 == Rapport de projet
 
-link:docs/RAPPORT.pdf[Rapport de projet]
+link:docs/RAPPORT.pdf[Rapport de projet (PDF)]
