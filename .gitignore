@@ -3,17 +3,27 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 dist/
-build/
 *.egg
 
 # Virtual environment
 venv/
 .venv/
 
+# Dart / Flutter
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Flutter build (couvre flutter/build/ et android/app/build/)
+build/
+
 # IDE
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
 *.swp
 *.swo
 
@@ -23,3 +33,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Documents générés
+RAPPORT.pdf
