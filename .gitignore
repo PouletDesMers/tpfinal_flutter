@@ -18,6 +18,9 @@ venv/
 # Flutter build (couvre flutter/build/ et android/app/build/)
 build/
 
+# Gradle cache
+.gradle/
+
 # IDE
 .idea/
 .vscode/

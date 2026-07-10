@@ -70,3 +70,7 @@ L'URL de l'API est configurée dans `flutter/lib/services/api_service.dart`.
 Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
 
 video::docs/Screen_Recording_20260710_103004.mp4[Vidéo de démonstration, width=360]
+
+== Rapport de projet
+
+link:docs/RAPPORT.pdf[Rapport de projet]
