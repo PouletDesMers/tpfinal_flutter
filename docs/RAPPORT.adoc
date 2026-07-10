@@ -1,0 +1,90 @@
+= Rapport — Application Flutter de Ventes Privées
+ITIS - INGETIS - ING - BA DEV/DATA 3
+:revdate: 2026-07-10
+:toc: left
+:toc-title: Table des matières
+:sectnums:
+:source-highlighter: highlight.js
+
+== Architecture choisie
+
+=== Vue d'ensemble
+
+L'application suit une architecture **client-serveur** classique : deux parties indépendantes communiquent via une API REST en HTTP.
+
+* Un **backend Python (Flask)** exposant des endpoints et lisant les données depuis des fichiers JSON.
+* Un **frontend Flutter (Dart)** consommant l'API et gérant l'état local avec le pattern *Provider*.
+
+[cols="2,2", options="header"]
+|===
+| Couche | Technologie
+| Backend | Python 3 + Flask 3.1
+| Frontend | Flutter 3.13+ (Dart 3)
+| État | Provider (ChangeNotifier)
+| Persistance session | `shared_preferences`
+| HTTP | paquet `http`
+| Stockage | Fichiers JSON locaux
+|===
+
+=== Backend (Python / Flask)
+
+Le serveur (`serveur/server.py`) est un fichier unique qui :
+
+1. Charge les fichiers `users.json` et `ventes.json` en mémoire au démarrage via `load_data()`.
+2. Expose quatre endpoints REST :
+   * `POST /api/login` — authentification (email + mot de passe)
+   * `POST /api/register` — création de compte (bonus)
+   * `GET /api/produits` — liste des produits avec filtres optionnels `?search=` et `?categorie=`
+   * `GET /api/produits/<id>` — détail d'un produit
+3. Renvoie les réponses au format JSON avec gestion des erreurs (400, 401, 404, 409).
+
+Le mot de passe est volontairement **exclu** de la réponse de connexion pour ne pas l'exposer côté client. Les filtres (recherche textuelle et catégorie) sont appliqués côté serveur avec un `AND` logique.
+
+=== Frontend (Flutter / Dart)
+
+L'application Flutter est organisée en trois couches :
+
+* `models/` — contient le modèle `User` avec les champs `id`, `email`, `nom`, `prenom`.
+* `services/` — trois providers :
+  ** `AuthProvider` : connexion, déconnexion et persistance via `SharedPreferences`.
+  ** `FavoritesProvider` : gestion des favoris localement (liste d'IDs persistée en JSON dans `SharedPreferences`).
+  ** `api_service.dart` : constante contenant l'URL de base de l'API.
+* `screens/` — quatre écrans :
+  ** `login_screen.dart` : formulaire de connexion avec validation et message d'erreur.
+  ** `register_screen.dart` : formulaire d'inscription.
+  ** `product_screen.dart` : grille de produits avec barre de recherche, filtres par catégorie et bouton favoris.
+  ** `product_detail_screen.dart` : affichage détaillé d'un produit.
+
+==== Gestion d'état avec Provider
+
+L'application utilise `MultiProvider` à la racine (`main.dart`) pour injecter `AuthProvider` et `FavoritesProvider`. Le `SplashScreen` initial vérifie la session au démarrage : si un utilisateur est déjà stocké dans `SharedPreferences`, la navigation se fait directement vers la liste des produits, sinon l'écran de connexion s'affiche.
+
+== Difficultés rencontrées
+
+=== 1. Communication réseau entre le serveur et l'émulateur
+
+Sous Android, l'émulateur ne peut pas joindre `localhost` de l'hôte. Il faut utiliser l'adresse `10.0.2.2` qui redirige vers la machine hôte. Pour un appareil réel, il faut l'IP locale (`172.16.2.126`). Une URL configurable dans `api_service.dart` a permis de résoudre le problème.
+
+=== 2. Gestion des états asynchrones
+
+L'enchaînement des appels réseau (connexion, chargement des produits) et la mise à jour de l'interface ont nécessité une synchronisation fine entre les `Future` et `notifyListeners()` dans les providers.
+
+=== 3. Persistance des favoris
+
+Les favoris sont stockés dans `SharedPreferences` sous forme de chaîne JSON (liste d'IDs). La désérialisation en `Set<int>` au chargement et la sérialisation inverse à la sauvegarde ont demandé une attention particulière pour éviter les doublons.
+
+=== 4. Filtrage côté serveur
+
+L'implémentation des filtres (recherche textuelle et catégorie) combine les deux critères avec un `AND` logique. La gestion des accents, de la casse et des espaces a nécessité des ajustements.
+
+== Limites de sécurité identifiées
+
+[cols="2,3", options="header"]
+|===
+| Limite | Impact
+| **Mots de passe en clair** | Stockés sans hachage dans `users.json`. Une fuite du fichier expose tous les comptes.
+| **Absence de token JWT** | L'authentification repose uniquement sur `SharedPreferences`. Aucun jeton côté serveur ne valide l'identité après la connexion.
+| **Pas de HTTPS** | Les échanges transitent en HTTP non chiffré. Sur un réseau local non sécurisé, un tiers peut intercepter les identifiants.
+| **CORS ouvert** | Le serveur accepte toutes les origines (`CORS(app)`), acceptable en développement mais dangereux en production.
+| **Aucune validation de mot de passe** | Ni côté client ni côté serveur, il n'y a de règle de complexité ou de longueur minimale.
+|===

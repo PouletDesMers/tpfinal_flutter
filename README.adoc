@@ -76,3 +76,6 @@ video::docs/Screen_Recording_20260710_103004.mp4[Vidéo de démonstration, width
 == Rapport de projet
 
 link:docs/RAPPORT.pdf[Rapport de projet (PDF)]
+link:docs/RAPPORT.adoc[ou version AsciiDoc du rapport]
+
+
