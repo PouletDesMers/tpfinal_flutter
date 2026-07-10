@@ -19,26 +19,5 @@
     "password": "test",
     "nom": "Test",
     "prenom": "Test"
-  },
-  {
-    "id": 4,
-    "email": "new@test.fr",
-    "password": "test123",
-    "nom": "Test",
-    "prenom": "Test"
-  },
-  {
-    "id": 5,
-    "email": "test@test.com",
-    "password": "azerty",
-    "nom": "ydtdhdhdhd",
-    "prenom": "testydtzt"
-  },
-  {
-    "id": 6,
-    "email": "droucook@gmail.com",
-    "password": "Azert123",
-    "nom": "Droual",
-    "prenom": "Cl\u00e9ment"
   }
 ]
