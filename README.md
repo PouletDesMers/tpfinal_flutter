@@ -8,12 +8,14 @@ Mini-projet : Application Flutter avec authentification et backend Python.
 
 ## Sommaire
 
-- [Lancer le serveur Python](#1-lancer-le-serveur-python)
-  - [Endpoints disponibles](#11-endpoints-disponibles)
-  - [Comptes de test](#12-comptes-de-test)
-- [Lancer l'application Flutter](#2-lancer-lapplication-flutter)
-- [Démonstration vidéo](#3-démonstration-vidéo)
-- [Rapport de projet](#4-rapport-de-projet)
+- [Application Flutter — Catalogue de Ventes Privées](#application-flutter--catalogue-de-ventes-privées)
+  - [Sommaire](#sommaire)
+  - [1. Lancer le serveur Python](#1-lancer-le-serveur-python)
+    - [1.1 Endpoints disponibles](#11-endpoints-disponibles)
+    - [1.2 Comptes de test](#12-comptes-de-test)
+  - [2. Lancer l'application Flutter](#2-lancer-lapplication-flutter)
+  - [3. Démonstration vidéo](#3-démonstration-vidéo)
+  - [4. Rapport de projet](#4-rapport-de-projet)
 
 ---
 
@@ -74,7 +76,7 @@ flutter run
 
 Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
 
-<video src="docs/Screen_Recording_20260710_103004.mp4" width="360" controls>
+<video src="[docs/Screen_Recording_20260710_103004.mp4](https://github.com/PouletDesMers/tpfinal_flutter/blob/main/docs/Screen_Recording_20260710_103004.mp4)" width="360" controls>
   Votre navigateur ne supporte pas la lecture vidéo.
 </video>
 
