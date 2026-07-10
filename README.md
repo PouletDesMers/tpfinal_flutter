@@ -76,9 +76,10 @@ flutter run
 
 Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
 
-<video src="https://raw.githubusercontent.com/PouletDesMers/tpfinal_flutter/main/docs/Screen_Recording_20260710_103004.mp4" width="360" controls>
-  Votre navigateur ne supporte pas la lecture vidéo.
-</video>
+
+https://github.com/user-attachments/assets/dacd76ae-8017-4976-8363-f30b6fc58649
+
+
 
 Également disponible sur YouTube : https://youtube.com/shorts/1tGAOCMhhLw
 
