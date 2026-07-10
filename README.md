@@ -76,7 +76,7 @@ flutter run
 
 Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
 
-<video src="[docs/Screen_Recording_20260710_103004.mp4](https://github.com/PouletDesMers/tpfinal_flutter/blob/main/docs/Screen_Recording_20260710_103004.mp4)" width="360" controls>
+<video src="https://raw.githubusercontent.com/PouletDesMers/tpfinal_flutter/main/docs/Screen_Recording_20260710_103004.mp4" width="360" controls>
   Votre navigateur ne supporte pas la lecture vidéo.
 </video>
 
