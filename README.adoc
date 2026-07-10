@@ -3,6 +3,8 @@ ITIS - INGETIS - ING - BA DEV/DATA 3
 :revdate: 2026-07-10
 :sectnums:
 :source-highlighter: highlight.js
+:toc: auto
+:toc-title: Sommaire
 
 Ce fichier explique comment lancer le serveur puis l'application.
 
