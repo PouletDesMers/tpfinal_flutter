@@ -1,0 +1,72 @@
+= Application Flutter — Catalogue de Ventes Privées
+ITIS - INGETIS - ING - BA DEV/DATA 3
+:revdate: 2026-07-10
+:sectnums:
+:source-highlighter: highlight.js
+
+Ce fichier explique comment lancer le serveur puis l'application.
+
+== Lancer le serveur Python
+
+[source,bash]
+----
+cd serveur
+
+# Créer l'environnement virtuel (1ère fois seulement)
+python3 -m venv venv
+
+# Activer et installer les dépendances
+./venv/bin/pip install -r requirements.txt
+
+# Lancer le serveur
+./venv/bin/python server.py
+----
+
+Le serveur démarre sur http://0.0.0.0:8081 (accessible sur le réseau local).
+
+=== Endpoints disponibles
+
+[cols="1,1,3", options="header"]
+|===
+| Méthode | Route | Description
+| `POST` | `/api/login` | Authentification (email + password)
+| `POST` | `/api/register` | Création de compte (bonus)
+| `GET` | `/api/produits` | Liste des produits (filtres : `?search=...&categorie=...`)
+| `GET` | `/api/produits/<id>` | Détail d'un produit
+|===
+
+=== Comptes de test
+
+[cols="1,1", options="header"]
+|===
+| Email | Mot de passe
+| sophie.martin@example.com | azerty123
+| karim.benali@example.com | motdepasse2
+|===
+
+== Lancer l'application Flutter
+
+[source,bash]
+----
+cd flutter
+
+# Installer les dépendances (1ère fois seulement)
+flutter pub get
+
+# Lancer sur un appareil/émulateur
+flutter run
+----
+
+[NOTE]
+====
+L'URL de l'API est configurée dans `flutter/lib/services/api_service.dart`.
+
+* Pour un **appareil réel** : utiliser l'IP locale du serveur (`http://192.168.x.x:8081`)
+* Pour l'**émulateur Android** : utiliser `http://10.0.2.2:8081`
+====
+
+== Démonstration vidéo
+
+Vidéo de démonstration de l'application (connexion, liste, détail, reconnexion automatique) :
+
+video::docs/Screen_Recording_20260710_103004.mp4[Vidéo de démonstration, width=360]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/seed/sac1/400/400",
+    "titre": "Sac à main cuir premium",
+    "description": "Sac en cuir véritable, fabrication artisanale.",
+    "categorie": "Mode",
+    "prix": 89.90
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/seed/casque2/400/400",
+    "titre": "Casque audio sans fil",
+    "description": "Réduction de bruit active, autonomie 30h.",
+    "categorie": "High-Tech",
+    "prix": 59.00
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/seed/chaussures3/400/400",
+    "titre": "Chaussures de sport",
+    "description": "Léger et respirant, idéal pour la course à pied.",
+    "categorie": "Mode",
+    "prix": 79.90
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/seed/montre4/400/400",
+    "titre": "Montre connectée Pro",
+    "description": "Écran AMOLED, GPS intégré, cardiofréquencemètre.",
+    "categorie": "High-Tech",
+    "prix": 199.00
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/seed/robe5/400/400",
+    "titre": "Robe d'été fleurie",
+    "description": "Tissu léger et fluide, parfaite pour les journées ensoleillées.",
+    "categorie": "Mode",
+    "prix": 49.90
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/seed/tablette6/400/400",
+    "titre": "Tablette tactile 10 pouces",
+    "description": "Écran HD, 64 Go, batterie 10h, compatible stylet.",
+    "categorie": "High-Tech",
+    "prix": 249.00
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/seed/chaise7/400/400",
+    "titre": "Chaise de bureau ergonomique",
+    "description": "Assise réglable en hauteur, soutien lombaire, accoudoirs 3D.",
+    "categorie": "Maison",
+    "prix": 159.00
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/seed/lamp8/400/400",
+    "titre": "Lampe de table design",
+    "description": "Ampoule LED intégrée, variateur d'intensité, base bois.",
+    "categorie": "Maison",
+    "prix": 39.90
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/seed/baskets9/400/400",
+    "titre": "Baskets mode rétro",
+    "description": "Inspiration années 90, semelle épaisse, cuir suédé.",
+    "categorie": "Mode",
+    "prix": 69.90
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/seed/enceinte10/400/400",
+    "titre": "Enceinte Bluetooth portable",
+    "description": "Étanche IP67, autonomie 20h, son stéréo 360°.",
+    "categorie": "High-Tech",
+    "prix": 45.00
+  },
+  {
+    "id": 11,
+    "image": "https://picsum.photos/seed/coussin11/400/400",
+    "titre": "Coussin décoratif velours",
+    "description": "Housse amovible lavable, rembourrage hypoallergénique.",
+    "categorie": "Maison",
+    "prix": 24.90
+  },
+  {
+    "id": 12,
+    "image": "https://picsum.photos/seed/ecran12/400/400",
+    "titre": "Écran PC 27 pouces 4K",
+    "description": "IPS, HDR10, 144 Hz, idéal pour le gaming et le graphisme.",
+    "categorie": "High-Tech",
+    "prix": 399.00
+  },
+  {
+    "id": 13,
+    "image": "https://picsum.photos/seed/parfum13/400/400",
+    "titre": "Parfum floral intense",
+    "description": "Notes de jasmin, rose et musc, tenue longue durée.",
+    "categorie": "Beauté",
+    "prix": 55.00
+  },
+  {
+    "id": 14,
+    "image": "https://picsum.photos/seed/serum14/400/400",
+    "titre": "Sérum visage vitaminé",
+    "description": "Vitamine C, acide hyaluronique, éclat et anti-âge.",
+    "categorie": "Beauté",
+    "prix": 32.00
+  },
+  {
+    "id": 15,
+    "image": "https://picsum.photos/seed/cafe15/400/400",
+    "titre": "Machine à café automatique",
+    "description": "Broyeur intégré, 15 bars, mousseur à lait, programmable.",
+    "categorie": "Maison",
+    "prix": 299.00
+  },
+  {
+    "id": 16,
+    "image": "https://picsum.photos/seed/sac16/400/400",
+    "titre": "Sac à dos urbain 30L",
+    "description": "Compartiment PC, anti-vol, imperméable, USB intégré.",
+    "categorie": "Mode",
+    "prix": 64.90
+  },
+  {
+    "id": 17,
+    "image": "https://picsum.photos/seed/ecouteurs17/400/400",
+    "titre": "Écouteurs True Wireless",
+    "description": "Réduction de bruit active, autonomie 8h, étui rechargeable.",
+    "categorie": "High-Tech",
+    "prix": 79.00
+  },
+  {
+    "id": 18,
+    "image": "https://picsum.photos/seed/mug18/400/400",
+    "titre": "Mug personnalisé",
+    "description": "Céramique 350 ml, impression haute définition, va au lave-vaisselle.",
+    "categorie": "Maison",
+    "prix": 14.90
+  },
+  {
+    "id": 19,
+    "image": "https://picsum.photos/seed/creme19/400/400",
+    "titre": "Crème hydratante visage",
+    "description": "Format 50 ml, sans paraben, testée dermatologiquement.",
+    "categorie": "Beauté",
+    "prix": 22.50
+  },
+  {
+    "id": 20,
+    "image": "https://picsum.photos/seed/jean20/400/400",
+    "titre": "Jean slim noir",
+    "description": "Coupe moderne, denim stretch, taille haute, confortable.",
+    "categorie": "Mode",
+    "prix": 59.90
+  },
+  {
+    "id": 21,
+    "image": "https://picsum.photos/seed/smartphone21/400/400",
+    "titre": "Smartphone 5G 128 Go",
+    "description": "Écran 6.5 pouces, triple appareil photo 50 MP, batterie 5000 mAh.",
+    "categorie": "High-Tech",
+    "prix": 449.00
+  },
+  {
+    "id": 22,
+    "image": "https://picsum.photos/seed/assiette22/400/400",
+    "titre": "Assiette artisanale en céramique",
+    "description": "Fait main, émail brillant, diamètre 27 cm.",
+    "categorie": "Maison",
+    "prix": 18.00
+  },
+  {
+    "id": 23,
+    "image": "https://picsum.photos/seed/rouge23/400/400",
+    "titre": "Rouge à lèvres matte",
+    "description": "Teinte rouge intense, tenue 12h, enrichi en beurre de karité.",
+    "categorie": "Beauté",
+    "prix": 16.90
+  },
+  {
+    "id": 24,
+    "image": "https://picsum.photos/seed/gourde24/400/400",
+    "titre": "Gourde isotherme inox",
+    "description": "500 ml, garde au froid 24h / chaud 12h, bouchon étanche.",
+    "categorie": "Sport",
+    "prix": 27.90
+  },
+  {
+    "id": 25,
+    "image": "https://picsum.photos/seed/tapis25/400/400",
+    "titre": "Tapis de yoga antidérapant",
+    "description": "Épaisseur 6 mm, matériau écologique, sangle de transport incluse.",
+    "categorie": "Sport",
+    "prix": 34.90
+  },
+  {
+    "id": 26,
+    "image": "https://picsum.photos/seed/velo26/400/400",
+    "titre": "VTT tout suspendu",
+    "description": "Cadre aluminium 21 vitesses, freins à disque hydrauliques.",
+    "categorie": "Sport",
+    "prix": 899.00
+  },
+  {
+    "id": 27,
+    "image": "https://picsum.photos/seed/lunettes27/400/400",
+    "titre": "Lunettes de soleil aviateur",
+    "description": "Monture métal doré, verres polarisés anti-UV.",
+    "categorie": "Mode",
+    "prix": 44.90
+  },
+  {
+    "id": 28,
+    "image": "https://picsum.photos/seed/grille28/400/400",
+    "titre": "Grille-pain 2 fentes",
+    "description": "6 niveaux de cuisson, centrage automatique, tiroir à miettes.",
+    "categorie": "Maison",
+    "prix": 32.00
+  },
+  {
+    "id": 29,
+    "image": "https://picsum.photos/seed/mascara29/400/400",
+    "titre": "Mascara volume extrême",
+    "description": "Brosse incurvée, effet faux-cils, formule waterproof.",
+    "categorie": "Beauté",
+    "prix": 19.90
+  },
+  {
+    "id": 30,
+    "image": "https://picsum.photos/seed/halte30/400/400",
+    "titre": "Set de haltères 20 kg",
+    "description": "Haltères réglables, revêtement caoutchouc, rangement inclus.",
+    "categorie": "Sport",
+    "prix": 119.00
+  }
+]

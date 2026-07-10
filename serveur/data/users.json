@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "email": "sophie.martin@example.com",
+    "password": "azerty123",
+    "nom": "Martin",
+    "prenom": "Sophie"
+  },
+  {
+    "id": 2,
+    "email": "karim.benali@example.com",
+    "password": "motdepasse2",
+    "nom": "Benali",
+    "prenom": "Karim"
+  },
+  {
+    "id": 3,
+    "email": "test@test.fr",
+    "password": "test",
+    "nom": "Test",
+    "prenom": "Test"
+  },
+  {
+    "id": 4,
+    "email": "new@test.fr",
+    "password": "test123",
+    "nom": "Test",
+    "prenom": "Test"
+  },
+  {
+    "id": 5,
+    "email": "test@test.com",
+    "password": "azerty",
+    "nom": "ydtdhdhdhd",
+    "prenom": "testydtzt"
+  },
+  {
+    "id": 6,
+    "email": "droucook@gmail.com",
+    "password": "Azert123",
+    "nom": "Droual",
+    "prenom": "Cl\u00e9ment"
+  }
+]
